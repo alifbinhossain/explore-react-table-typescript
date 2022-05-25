@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply max-w-[100vw] overflow-x-hidden;
+  }
+
+  table {
+    @apply border-collapse w-full text-center  text-gray-200 overflow-scroll;
+  }
+
+  table th,
+  table td {
+    @apply border-[1px] border-gray-200 p-2;
+  }
+
+  table tbody tr {
+    @apply odd:bg-gray-400 odd:text-gray-800;
+  }
+
+  table thead {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  .sb {
+    @apply border-[1px] border-red-600;
+  }
+}
